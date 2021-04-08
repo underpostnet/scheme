@@ -1,2 +1,5 @@
+STRING CONCAT
 > (string-append "Apple" "Banana")
-"AppleBanana"
+
+NUMBER TO STRING
+> (string->number "1234")

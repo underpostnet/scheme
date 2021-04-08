@@ -1,7 +1,11 @@
+
+(require colorize)
+
 ; asignamos ruta de archivo
 (define path "c:/dd/deploy_area/scheme/doc/meta")
 (display "Ruta Archivo ->\n")
-(write path)
+; (write path)
+(display (colorize path 'green))
 (display "\n")
 
 
@@ -12,7 +16,8 @@
               ((i (in-input-port-bytes f)))
       (+ counter 1)))))
 (display "Cantida de Caracteres Archivo ->\n")
-(write cont_char_content_path)
+; (write cont_char_content_path)
+(display (colorize (number->string cont_char_content_path) 'yellow))
 (display "\n")
 
 
@@ -20,5 +25,6 @@
 (define file_content (with-input-from-file path
     (lambda () (read-string cont_char_content_path) )))
 (display "contenido archivo ->\n")
-(write file_content)
+; (write file_content)
+(display (colorize file_content 'green))
 (display "\n")
