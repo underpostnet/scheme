@@ -11,15 +11,19 @@
 https://underpost.net
 
 
-## OFICIAL:
+## Oficial:
 
 
 - https://docs.racket-lang.org/
 
 
+## Usage:
 
 
-## DOC:
+- Script: `racket file.rkt`
+
+
+## Doc:
 
 
 - https://docs.racket-lang.org/reference/
@@ -31,8 +35,6 @@ https://underpost.net
 - https://docs.racket-lang.org/pkg/getting-started.html
 
 
-
-
 ## Raco package manager systems guide
 
 
@@ -42,15 +44,19 @@ https://underpost.net
 - https://beautifulracket.com/setting-the-windows-path.html
 
 
+- *raco pkg show*
+
+
 - *raco pkg install* `package-name`
 
 
+- *raco pkg remove* `package-name`
 
 
 ## Dr Racket:
 
 
-CTRL + R -> RUN
+- CTRL + R -> RUN
 
 
-CTRL SHIF ? -> LAMBDA
+- CTRL SHIF ? -> LAMBDA
