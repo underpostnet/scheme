@@ -1,0 +1,11 @@
+\r -> Retorno de carro (return)
+
+\n -> Nueva línea (new line)
+
+\r\n -> Por lo general van juntos,
+lo que hacen es poner el cursor en la
+linea de abajo y ponerlo en el principio
+del renglon. Para resumirlo, es como
+si apretaras enter.
+
+\t -> Es la tabulacion horizontal
