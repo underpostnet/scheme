@@ -6,3 +6,6 @@
 
 
 (load "c:/dd/deploy_area/scheme/src/main.scm")
+
+
+(load "c:/dd/deploy_area/scheme/src/loop_time.scm")
