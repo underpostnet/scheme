@@ -1,16 +1,11 @@
-
 #lang scheme
 
 (require colorize)
 
-(provide pg)
-(define pg
-  ( lambda (str) (display (colorize str 'green) )
-  )
-)
+(provide (all-defined-out))
 
-(provide py)
-(define py
-  ( lambda (str) (display (colorize str 'yellow) )
-  )
-)
+(define pg_n (lambda (num) (display (colorize (string-append (number->string num) "\n") 'green))))
+(define pg_s (lambda (str) (display (colorize (string-append str "\n") 'green))))
+
+(define py_n (lambda (num) (display (colorize (string-append (number->string num) "\n") 'yellow))))
+(define py_s (lambda (str) (display (colorize (string-append str "\n") 'yellow))))
