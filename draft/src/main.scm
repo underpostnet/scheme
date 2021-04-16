@@ -2,7 +2,7 @@
 (require colorize)
 
 ; asignamos ruta de archivo
-(define path "c:/dd/deploy_area/scheme/doc/meta")
+(define path "c:/dd/deploy_area/scheme/draft/doc/meta")
 (display "Ruta Archivo ->\n")
 ; (write path)
 (display (colorize path 'green))

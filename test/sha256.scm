@@ -1,0 +1,70 @@
+#lang scheme
+(require sha)
+
+; sha256
+
+(define hash_a (bytes->hex-string (sha256-bytes #"test")))
+
+(define hash_b (bytes->hex-string (sha256-bytes #"test")))
+
+(define hash_c (bytes->hex-string (sha256-bytes #"testtesttes
+  ttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+  testtesttesttesttesttesttesttesttesttesttesttesttesttestt
+  esttesttesttesttesttesttesttesttesttesttesttesttesttesttestt
+  esttesttesttesttesttesttesttesttesttesttesttesttesttestte
+  sttesttesttesttesttesttesttesttesttesttesttesttesttesttes
+  ttesttesttesttesttesttesttesttesttesttetesttesttesttesttestt
+  esttesttesttesttesttesttesttesttesttesttesttesttesttestte
+  sttesttesttesttesttesttesttesttesttesttesttesttesttesttes
+  ttesttesttesttesttesttesttesttesttesttetesttesttesttesttestt
+  esttesttesttesttesttesttesttesttesttesttesttesttesttestte
+  sttesttesttesttesttesttesttesttesttesttesttesttesttesttes
+  ttesttesttesttesttesttesttesttesttesttetesttesttesttesttestt
+  esttesttesttesttesttesttesttesttesttesttesttesttesttestte
+  sttesttesttesttesttesttesttesttesttesttesttesttesttesttes
+  ttesttesttesttesttesttesttesttesttesttetesttesttesttesttestt
+  esttesttesttesttesttesttesttesttesttesttesttesttesttestte
+  sttesttesttesttesttesttesttesttesttesttesttesttesttesttes
+  ttesttesttesttesttesttesttesttesttesttetesttesttesttesttestt
+  esttesttesttesttesttesttesttesttesttesttesttesttesttestte
+  sttesttesttesttesttesttesttesttesttesttesttesttesttesttes
+  ttesttesttesttesttesttesttesttesttesttetesttesttesttestte
+  sttesttesttesttesttesttesttesttesttesttesttesttesttesttes
+  ttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+  testtesttesttesttesttesttesttesttesttesttesttest")))
+
+(define hash_d (bytes->hex-string (sha256-bytes #"testtesttes
+  ttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+  testtesttesttesttesttesttesttesttesttesttesttesttesttestt
+  esttesttesttesttesttesttesttesttesttesttesttesttesttesttestt
+  esttesttesttesttesttesttesttesttesttesttesttesttesttestte
+  sttesttesttesttesttesttesttesttesttesttesttesttesttesttes
+  ttesttesttesttesttesttesttesttesttesttetesttesttesttesttestt
+  esttesttesttesttesttesttesttesttesttesttesttesttesttestte
+  sttesttesttesttesttesttesttesttesttesttesttesttesttesttes
+  ttesttesttesttesttesttesttesttesttesttetesttesttesttesttestt
+  esttesttesttesttesttesttesttesttesttesttesttesttesttestte
+  sttesttesttesttesttesttesttesttesttesttesttesttesttesttes
+  ttesttesttesttesttesttesttesttesttesttetesttesttesttesttestt
+  esttesttesttesttesttesttesttesttesttesttesttesttesttestte
+  sttesttesttesttesttesttesttesttesttesttesttesttesttesttes
+  ttesttesttesttesttesttesttesttesttesttetesttesttesttesttestt
+  esttesttesttesttesttesttesttesttesttesttesttesttesttestte
+  sttesttesttesttesttesttesttesttesttesttesttesttesttesttes
+  ttesttesttesttesttesttesttesttesttesttetesttesttesttesttestt
+  esttesttesttesttesttesttesttesttesttesttesttesttesttestte
+  sttesttesttesttesttesttesttesttesttesttesttesttesttesttes
+  ttesttesttesttesttesttesttesttesttesttetesttesttesttestte
+  sttesttesttesttesttesttesttesttesttesttesttesttesttesttes
+  ttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+  testtesttesttesttesttesttesttesttesttesttesttest")))
+
+(display "\n")
+(display hash_a)
+(display "\n")
+(display hash_b)
+(display "\n")
+(display hash_c)
+(display "\n")
+(display hash_d)
+(display "\n")

@@ -21,4 +21,4 @@
               #:servlet-path "/"
               #:extra-files-paths
               (list
-               (build-path "c:/dd/deploy_area/scheme/http/public")))
+               (build-path "c:/dd/deploy_area/scheme/draft/http/public")))
