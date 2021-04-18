@@ -20,9 +20,7 @@
 
 (for ( ( (key val) (in-hash json_content_a) ) )
 
-  ; (printf "~a = ~a~%" key val)
 
-  (begin
 
     (py_s "new test ->")
     (display key)
@@ -42,7 +40,11 @@
     (display (list? val))
     (display "\n\n")
 
-    void)
+    (py_s "resume ->")
+    (printf "~a = ~a~%" key val)
+    (display "\n\n")
+
+
 
 )
 
