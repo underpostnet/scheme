@@ -92,6 +92,9 @@
     (λ () (read-json) )
 )
 
+;-------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------
+
 (pg_s "Json test 2")
 
 (define y (string->jsexpr "{
@@ -109,28 +112,30 @@
 ;-------------------------------------------------------------------------------
 ;-------------------------------------------------------------------------------
 
-(pg_s "String replace")
+(pg_s "Json test 3")
 
-(define (string-replace input-string from-char to-char)
-  (list->string
-   (for/list ((item (string->list input-string)))
-     (if (equal? item from-char)
-         to-char
-         item))))
+(define z (call-with-input-file "./test.json" read-json))
 
-(string-replace "ho ho ho ho hola" #\o #\i)
+(for ( ( (key val) (in-hash z) ) )
 
+  (printf "~a = ~a~%" key val)
+
+)
 
 
 ;-------------------------------------------------------------------------------
 ;-------------------------------------------------------------------------------
 
+(pg_s "string replace")
 
+(define content_test_a "hola hola \n\r \" ")
 
-
-
-
-
+content_test_a
+(set! content_test_a (string-replace content_test_a "\n" ""))
+(set! content_test_a (string-replace content_test_a "\r" ""))
+(set! content_test_a (string-replace content_test_a "\"" "\""))
+(set! content_test_a (string-replace content_test_a "hola" "chao"))
+content_test_a
 
 ;-------------------------------------------------------------------------------
 ;-------------------------------------------------------------------------------
