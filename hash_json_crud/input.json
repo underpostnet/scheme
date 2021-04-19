@@ -1,0 +1,7 @@
+{
+  "a":1,
+  "b":true,
+  "c":"test",
+  "d":["test",false,2],
+  "e":{"sub_a":[1,true,"lol"]}
+}
