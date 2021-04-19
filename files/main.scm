@@ -12,7 +12,7 @@
 
 
 
-(define json_content_a (call-with-input-file "./input.json" read-json))
+(define json_content_a (call-with-input-file "./data/input.json" read-json))
 
 
 (pg_s "test 1")
@@ -49,10 +49,17 @@
 (display "\n")
 
 (hash-set! table 'a "test_update")
-(hash-set! table 'c (list "a" "b" "c"))
+(hash-set! table 'c (list "a" #t 4))
 (display table)
 (display "\n")
-
+(display (hash-ref table 'c))
+(display "\n")
+(display (list? (hash-ref table 'c)))
+(display "\n")
+(display (jsexpr? table))
+(display "\n")
+(display (jsexpr->string table))
+(display "\n")
 
 
 
